@@ -1,0 +1,22 @@
+wandb_version: 1
+
+activation:
+  value: relu
+batch:
+  value: 128
+dataset:
+  value: mnist
+epochs:
+  value: 10
+hidden_size:
+  value: 64
+learning_rate:
+  value: 0.045753958872060775
+loss:
+  value: mse
+num_layers:
+  value: 2
+optimizer:
+  value: adam
+weight_init:
+  value: random

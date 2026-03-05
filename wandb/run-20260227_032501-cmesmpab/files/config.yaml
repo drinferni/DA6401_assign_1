@@ -1,0 +1,32 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        m: []
+        python_version: 3.13.11
+        t:
+            "3":
+                - 14
+            "4": 3.13.11
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+activation:
+    value: relu
+batch:
+    value: 64
+dataset:
+    value: mnist
+epochs:
+    value: 40
+hidden_size:
+    value: 64
+learning_rate:
+    value: 0.0025662417040582352
+loss:
+    value: cross_entropy
+num_layers:
+    value: 1
+optimizer:
+    value: RMSprop
+weight_init:
+    value: random

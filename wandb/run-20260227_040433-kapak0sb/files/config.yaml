@@ -1,0 +1,90 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            rknfh8uvzrbpbiapey0fbhk9inznzgsj:
+                args:
+                    - -d
+                    - mnist
+                    - -e
+                    - "10"
+                    - -b
+                    - "128"
+                    - -l
+                    - mse
+                    - -o
+                    - sgd
+                    - -lr
+                    - "0.06709609170332517"
+                    - -nhl
+                    - "2"
+                    - -sz
+                    - "32"
+                    - -a
+                    - sigmoid
+                    - -w_i
+                    - random
+                    - -wp
+                    - DA_assign_1
+                    - -msp
+                    - model_kapak0sb.txt
+                cpu_count: 14
+                cpu_count_logical: 20
+                disk:
+                    /:
+                        total: "8211382272"
+                        used: "135168"
+                email: cs22b051@smail.iitm.ac.in
+                executable: /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/bin/python
+                host: fedora
+                memory:
+                    total: "16422768640"
+                os: Linux-6.18.12-200.fc43.x86_64-x86_64-with-glibc2.42
+                program: -m src.train
+                python: CPython 3.13.11
+                root: /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main
+                startedAt: "2026-02-26T22:34:33.861545Z"
+                writerId: rknfh8uvzrbpbiapey0fbhk9inznzgsj
+        m: []
+        python_version: 3.13.11
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+                - 16
+            "4": 3.13.11
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+activation:
+    value: sigmoid
+batch:
+    value: 128
+dataset:
+    value: mnist
+epochs:
+    value: 10
+hidden_size:
+    value: 32
+learning_rate:
+    value: 0.06709609170332517
+loss:
+    value: mse
+model_save_path:
+    value: model_kapak0sb.txt
+num_layers:
+    value: 2
+optimizer:
+    value: sgd
+wandb_project:
+    value: DA_assign_1
+weight_decay:
+    value: null
+weight_init:
+    value: random

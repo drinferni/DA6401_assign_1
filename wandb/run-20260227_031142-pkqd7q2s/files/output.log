@@ -1,0 +1,14 @@
+(785, 128)
+(129, 128)
+(129, 128)
+(129, 10)
+60000
+epochs => 0
+epochs => 1
+epochs => 2
+epochs => 3
+epochs => 4
+epochs => 5
+Traceback (most recent call last):
+  File [35m"<frozen runpy>"[0m, line [35m198[0m, in [35m_run_module_as_main[0m
+  File [35m"<frozen runpy>"[0m, line [35m88[0m, in [35m_run_code[0m

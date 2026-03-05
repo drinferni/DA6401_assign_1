@@ -1,0 +1,13 @@
+{"time":"2026-02-27T02:10:16.035741994+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-27T02:10:16.496899237+05:30","level":"INFO","msg":"stream: created new stream","id":"yku52xp6"}
+{"time":"2026-02-27T02:10:16.497000842+05:30","level":"INFO","msg":"handler: started","stream_id":"yku52xp6"}
+{"time":"2026-02-27T02:10:16.497073733+05:30","level":"INFO","msg":"stream: started","id":"yku52xp6"}
+{"time":"2026-02-27T02:10:16.497100657+05:30","level":"INFO","msg":"writer: started","stream_id":"yku52xp6"}
+{"time":"2026-02-27T02:10:16.49712927+05:30","level":"INFO","msg":"sender: started","stream_id":"yku52xp6"}
+{"time":"2026-02-27T02:10:25.075306685+05:30","level":"ERROR","msg":"dispatch: no responder found: 2(@)"}
+{"time":"2026-02-27T02:11:57.001246248+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-27T02:11:57.564302383+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-27T02:11:57.568338996+05:30","level":"INFO","msg":"stream: closing","id":"yku52xp6"}
+{"time":"2026-02-27T02:11:57.568354905+05:30","level":"INFO","msg":"handler: closed","stream_id":"yku52xp6"}
+{"time":"2026-02-27T02:11:57.568412007+05:30","level":"INFO","msg":"sender: closed","stream_id":"yku52xp6"}
+{"time":"2026-02-27T02:11:57.568421431+05:30","level":"INFO","msg":"stream: closed","id":"yku52xp6"}

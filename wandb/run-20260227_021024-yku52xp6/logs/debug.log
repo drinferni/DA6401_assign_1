@@ -1,0 +1,14 @@
+2026-02-27 02:10:24,782 INFO    MainThread:8819 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-02-27 02:10:24,782 INFO    MainThread:8819 [wandb_setup.py:_flush():81] Configure stats pid to 8819
+2026-02-27 02:10:24,782 INFO    MainThread:8819 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-02-27 02:10:24,782 INFO    MainThread:8819 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/wandb/run-20260227_021024-yku52xp6/logs/debug.log
+2026-02-27 02:10:24,782 INFO    MainThread:8819 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/wandb/run-20260227_021024-yku52xp6/logs/debug-internal.log
+2026-02-27 02:10:24,782 INFO    MainThread:8819 [wandb_init.py:init():844] calling init triggers
+2026-02-27 02:10:24,782 INFO    MainThread:8819 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'sigmoid', 'batch': 32, 'dataset': 'mnist', 'epochs': 10, 'hidden_size': 64, 'learning_rate': 0.0005479852312179041, 'loss': 'mse', 'num_layers': 2, 'optimizer': 'momentum', 'weight_init': 'xavier'}
+config: {'dataset': 'mnist', 'epochs': '10', 'batch': '32', 'loss': 'mse', 'optimizer': 'momentum', 'learning_rate': '0.0005479852312179041', 'weight_decay': None, 'num_layers': '2', 'hidden_size': '64', 'activation': 'sigmoid', 'weight_init': 'xavier', 'wandb_project': 'DA_assign_1', 'model_save_path': 'model_yku52xp6.txt', '_wandb': {}}
+2026-02-27 02:10:24,783 INFO    MainThread:8819 [wandb_init.py:init():892] starting backend
+2026-02-27 02:10:24,783 INFO    MainThread:8819 [wandb_init.py:init():895] sending inform_init request
+2026-02-27 02:10:24,811 INFO    MainThread:8819 [wandb_init.py:init():903] backend started and connected
+2026-02-27 02:10:24,814 INFO    MainThread:8819 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'sigmoid', 'batch': 32, 'dataset': 'mnist', 'epochs': 10, 'hidden_size': 64, 'learning_rate': 0.0005479852312179041, 'loss': 'mse', 'num_layers': 2, 'optimizer': 'momentum', 'weight_init': 'xavier'}
+2026-02-27 02:10:24,815 INFO    MainThread:8819 [wandb_init.py:init():973] updated telemetry
+2026-02-27 02:10:24,816 INFO    MainThread:8819 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout

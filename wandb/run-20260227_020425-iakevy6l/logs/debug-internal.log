@@ -1,0 +1,13 @@
+{"time":"2026-02-27T02:04:25.259103901+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-27T02:04:25.662341527+05:30","level":"INFO","msg":"stream: created new stream","id":"iakevy6l"}
+{"time":"2026-02-27T02:04:25.66257716+05:30","level":"INFO","msg":"stream: started","id":"iakevy6l"}
+{"time":"2026-02-27T02:04:25.662565241+05:30","level":"INFO","msg":"handler: started","stream_id":"iakevy6l"}
+{"time":"2026-02-27T02:04:25.662588762+05:30","level":"INFO","msg":"writer: started","stream_id":"iakevy6l"}
+{"time":"2026-02-27T02:04:25.662614385+05:30","level":"INFO","msg":"sender: started","stream_id":"iakevy6l"}
+{"time":"2026-02-27T02:04:33.935348314+05:30","level":"ERROR","msg":"dispatch: no responder found: 2(@)"}
+{"time":"2026-02-27T02:06:06.096037044+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-27T02:06:06.426606062+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-27T02:06:06.430008715+05:30","level":"INFO","msg":"stream: closing","id":"iakevy6l"}
+{"time":"2026-02-27T02:06:06.430017891+05:30","level":"INFO","msg":"handler: closed","stream_id":"iakevy6l"}
+{"time":"2026-02-27T02:06:06.430055192+05:30","level":"INFO","msg":"sender: closed","stream_id":"iakevy6l"}
+{"time":"2026-02-27T02:06:06.430059425+05:30","level":"INFO","msg":"stream: closed","id":"iakevy6l"}

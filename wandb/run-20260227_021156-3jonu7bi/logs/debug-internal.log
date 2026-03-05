@@ -1,0 +1,13 @@
+{"time":"2026-02-27T02:11:56.500057132+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-27T02:11:56.88649825+05:30","level":"INFO","msg":"stream: created new stream","id":"3jonu7bi"}
+{"time":"2026-02-27T02:11:56.886615287+05:30","level":"INFO","msg":"stream: started","id":"3jonu7bi"}
+{"time":"2026-02-27T02:11:56.886649788+05:30","level":"INFO","msg":"handler: started","stream_id":"3jonu7bi"}
+{"time":"2026-02-27T02:11:56.88667781+05:30","level":"INFO","msg":"writer: started","stream_id":"3jonu7bi"}
+{"time":"2026-02-27T02:11:56.886685927+05:30","level":"INFO","msg":"sender: started","stream_id":"3jonu7bi"}
+{"time":"2026-02-27T02:12:03.865912076+05:30","level":"ERROR","msg":"dispatch: no responder found: 2(@)"}
+{"time":"2026-02-27T02:13:35.831513371+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-27T02:13:36.232102885+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-27T02:13:36.235010387+05:30","level":"INFO","msg":"stream: closing","id":"3jonu7bi"}
+{"time":"2026-02-27T02:13:36.235023055+05:30","level":"INFO","msg":"handler: closed","stream_id":"3jonu7bi"}
+{"time":"2026-02-27T02:13:36.235073196+05:30","level":"INFO","msg":"sender: closed","stream_id":"3jonu7bi"}
+{"time":"2026-02-27T02:13:36.235080931+05:30","level":"INFO","msg":"stream: closed","id":"3jonu7bi"}

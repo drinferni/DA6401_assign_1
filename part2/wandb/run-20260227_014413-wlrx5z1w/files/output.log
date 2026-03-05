@@ -1,0 +1,20 @@
+loading data
+data_loaded
+Traceback (most recent call last):
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/part2/2_1.py", line 65, in <module>
+    log_data_exploration()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/part2/2_1.py", line 55, in log_data_exploration
+    row.append(wandb.Image(img))
+               ~~~~~~~~~~~^^^^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/lib/python3.13/site-packages/wandb/sdk/data_types/image.py", line 280, in __init__
+    self._initialize_from_data(data_or_path, mode, file_type, normalize)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/lib/python3.13/site-packages/wandb/sdk/data_types/image.py", line 437, in _initialize_from_data
+    mode = mode or self.guess_mode(data, file_type)
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/lib/python3.13/site-packages/wandb/sdk/data_types/image.py", line 623, in guess_mode
+    raise ValueError(
+        f"Un-supported shape for image conversion {list(data.shape)}"
+    )
+ValueError: Un-supported shape for image conversion [784]

@@ -1,0 +1,16 @@
+(785, 4)
+(5, 10)
+60000
+epochs => 0
+epochs => 1
+epochs => 2
+epochs => 3
+epochs => 4
+
+--- Epoch 5 Evaluation ---
+Loss:   0.3251 | Acc:   0.1119
+Precision:  0.1887 | Recall: 0.1147 | F1: 0.0442
+
+--- Epoch 5 Evaluation ---
+Loss:   0.3251 | Acc:   0.1101
+Precision:  0.2881 | Recall: 0.1121 | F1: 0.0401

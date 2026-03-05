@@ -1,0 +1,90 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            2wxzqvy0h2eyn8z0rhva6qo27a22c6q7:
+                args:
+                    - -d
+                    - mnist
+                    - -e
+                    - "10"
+                    - -b
+                    - "64"
+                    - -l
+                    - mse
+                    - -o
+                    - momentum
+                    - -lr
+                    - "0.0006885526788922262"
+                    - -nhl
+                    - "1"
+                    - -sz
+                    - "64"
+                    - -a
+                    - relu
+                    - -w_i
+                    - random
+                    - -wp
+                    - DA_assign_1
+                    - -msp
+                    - model_j973oev5.txt
+                cpu_count: 14
+                cpu_count_logical: 20
+                disk:
+                    /:
+                        total: "8211382272"
+                        used: "135168"
+                email: cs22b051@smail.iitm.ac.in
+                executable: /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/bin/python
+                host: fedora
+                memory:
+                    total: "16422768640"
+                os: Linux-6.18.12-200.fc43.x86_64-x86_64-with-glibc2.42
+                program: -m src.train
+                python: CPython 3.13.11
+                root: /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main
+                startedAt: "2026-02-26T23:59:08.051851Z"
+                writerId: 2wxzqvy0h2eyn8z0rhva6qo27a22c6q7
+        m: []
+        python_version: 3.13.11
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+                - 16
+            "4": 3.13.11
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+activation:
+    value: relu
+batch:
+    value: 64
+dataset:
+    value: mnist
+epochs:
+    value: 10
+hidden_size:
+    value: 64
+learning_rate:
+    value: 0.0006885526788922262
+loss:
+    value: mse
+model_save_path:
+    value: model_j973oev5.txt
+num_layers:
+    value: 1
+optimizer:
+    value: momentum
+wandb_project:
+    value: DA_assign_1
+weight_decay:
+    value: null
+weight_init:
+    value: random

@@ -1,0 +1,22 @@
+wandb_version: 1
+
+activation:
+  value: sigmoid
+batch:
+  value: 64
+dataset:
+  value: mnist
+epochs:
+  value: 10
+hidden_size:
+  value: 64
+learning_rate:
+  value: 0.001537012687292492
+loss:
+  value: mse
+num_layers:
+  value: 1
+optimizer:
+  value: adam
+weight_init:
+  value: random

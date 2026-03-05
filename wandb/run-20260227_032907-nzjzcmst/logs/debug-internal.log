@@ -1,0 +1,12 @@
+{"time":"2026-02-27T03:29:07.503538827+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-27T03:29:07.969778887+05:30","level":"INFO","msg":"stream: created new stream","id":"nzjzcmst"}
+{"time":"2026-02-27T03:29:07.969865746+05:30","level":"INFO","msg":"handler: started","stream_id":"nzjzcmst"}
+{"time":"2026-02-27T03:29:07.970039974+05:30","level":"INFO","msg":"stream: started","id":"nzjzcmst"}
+{"time":"2026-02-27T03:29:07.970038685+05:30","level":"INFO","msg":"writer: started","stream_id":"nzjzcmst"}
+{"time":"2026-02-27T03:29:07.970055324+05:30","level":"INFO","msg":"sender: started","stream_id":"nzjzcmst"}
+{"time":"2026-02-27T03:29:11.15130188+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-27T03:29:11.607381303+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-27T03:29:11.613189021+05:30","level":"INFO","msg":"stream: closing","id":"nzjzcmst"}
+{"time":"2026-02-27T03:29:11.613214395+05:30","level":"INFO","msg":"handler: closed","stream_id":"nzjzcmst"}
+{"time":"2026-02-27T03:29:11.613291662+05:30","level":"INFO","msg":"sender: closed","stream_id":"nzjzcmst"}
+{"time":"2026-02-27T03:29:11.613308037+05:30","level":"INFO","msg":"stream: closed","id":"nzjzcmst"}

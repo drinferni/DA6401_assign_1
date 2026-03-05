@@ -1,0 +1,13 @@
+{"time":"2026-02-27T04:38:19.52968352+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-27T04:38:19.982789476+05:30","level":"INFO","msg":"stream: created new stream","id":"mdpv2j5w"}
+{"time":"2026-02-27T04:38:19.982881747+05:30","level":"INFO","msg":"handler: started","stream_id":"mdpv2j5w"}
+{"time":"2026-02-27T04:38:19.983009046+05:30","level":"INFO","msg":"stream: started","id":"mdpv2j5w"}
+{"time":"2026-02-27T04:38:19.983061508+05:30","level":"INFO","msg":"writer: started","stream_id":"mdpv2j5w"}
+{"time":"2026-02-27T04:38:19.983093052+05:30","level":"INFO","msg":"sender: started","stream_id":"mdpv2j5w"}
+{"time":"2026-02-27T04:40:06.215521233+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/cs22b051-indian-institute-of-technology-madras/DA_assign_1/mdpv2j5w/file_stream\": read tcp 10.160.64.239:51936->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2026-02-27T04:45:04.317950441+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-27T04:45:04.881022915+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-27T04:45:04.885071719+05:30","level":"INFO","msg":"stream: closing","id":"mdpv2j5w"}
+{"time":"2026-02-27T04:45:04.885085388+05:30","level":"INFO","msg":"handler: closed","stream_id":"mdpv2j5w"}
+{"time":"2026-02-27T04:45:04.885162426+05:30","level":"INFO","msg":"sender: closed","stream_id":"mdpv2j5w"}
+{"time":"2026-02-27T04:45:04.885173265+05:30","level":"INFO","msg":"stream: closed","id":"mdpv2j5w"}

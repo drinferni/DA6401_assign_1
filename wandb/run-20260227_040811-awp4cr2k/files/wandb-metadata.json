@@ -1,0 +1,48 @@
+{
+  "os":  "Linux-6.18.12-200.fc43.x86_64-x86_64-with-glibc2.42",
+  "python":  "CPython 3.13.11",
+  "startedAt":  "2026-02-26T22:38:11.206112Z",
+  "args":  [
+    "-d",
+    "mnist",
+    "-e",
+    "10",
+    "-b",
+    "64",
+    "-l",
+    "mse",
+    "-o",
+    "sgd",
+    "-lr",
+    "0.00034837294336689844",
+    "-nhl",
+    "2",
+    "-sz",
+    "16",
+    "-a",
+    "tanh",
+    "-w_i",
+    "xavier",
+    "-wp",
+    "DA_assign_1",
+    "-msp",
+    "model_awp4cr2k.txt"
+  ],
+  "program":  "-m src.train",
+  "email":  "cs22b051@smail.iitm.ac.in",
+  "root":  "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main",
+  "host":  "fedora",
+  "executable":  "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/bin/python",
+  "cpu_count":  14,
+  "cpu_count_logical":  20,
+  "disk":  {
+    "/":  {
+      "total":  "8211382272",
+      "used":  "135168"
+    }
+  },
+  "memory":  {
+    "total":  "16422768640"
+  },
+  "writerId":  "25rkbpdckcvqk110tccyq5sigc65vm2t"
+}

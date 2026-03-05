@@ -1,0 +1,12 @@
+{"time":"2026-02-27T04:17:06.812383071+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-27T04:17:07.296395736+05:30","level":"INFO","msg":"stream: created new stream","id":"xgaplex3"}
+{"time":"2026-02-27T04:17:07.296512932+05:30","level":"INFO","msg":"handler: started","stream_id":"xgaplex3"}
+{"time":"2026-02-27T04:17:07.296679897+05:30","level":"INFO","msg":"stream: started","id":"xgaplex3"}
+{"time":"2026-02-27T04:17:07.296709359+05:30","level":"INFO","msg":"sender: started","stream_id":"xgaplex3"}
+{"time":"2026-02-27T04:17:07.296711391+05:30","level":"INFO","msg":"writer: started","stream_id":"xgaplex3"}
+{"time":"2026-02-27T04:17:10.536397395+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-27T04:17:10.932462684+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-27T04:17:10.938730419+05:30","level":"INFO","msg":"stream: closing","id":"xgaplex3"}
+{"time":"2026-02-27T04:17:10.938756092+05:30","level":"INFO","msg":"handler: closed","stream_id":"xgaplex3"}
+{"time":"2026-02-27T04:17:10.938833089+05:30","level":"INFO","msg":"sender: closed","stream_id":"xgaplex3"}
+{"time":"2026-02-27T04:17:10.938853637+05:30","level":"INFO","msg":"stream: closed","id":"xgaplex3"}

@@ -1,0 +1,21 @@
+(785, 32)
+(33, 32)
+(33, 10)
+60000
+epochs => 0
+Traceback (most recent call last):
+  File [35m"<frozen runpy>"[0m, line [35m198[0m, in [35m_run_module_as_main[0m
+  File [35m"<frozen runpy>"[0m, line [35m88[0m, in [35m_run_code[0m
+  File [35m"/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/train.py"[0m, line [35m88[0m, in [35m<module>[0m
+    [31mmain[0m[1;31m()[0m
+    [31m~~~~[0m[1;31m^^[0m
+  File [35m"/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/train.py"[0m, line [35m78[0m, in [35mmain[0m
+    [31mann.train[0m[1;31m(X_train,Y_train, int(args.epochs), int(args.batch))[0m
+    [31m~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/ann/neural_network.py"[0m, line [35m209[0m, in [35mtrain[0m
+    pred_Y = self.forward(new_X[dp])
+  File [35m"/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/ann/neural_network.py"[0m, line [35m106[0m, in [35mforward[0m
+    in_mat = np.insert(in_mat,0,1)
+  File [35m"/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py"[0m, line [35m5537[0m, in [35minsert[0m
+    new = empty(newshape, arr.dtype, arrorder)
+[1;35mKeyboardInterrupt[0m

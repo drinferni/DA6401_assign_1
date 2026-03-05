@@ -1,0 +1,12 @@
+{"time":"2026-02-27T02:46:19.262838139+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-27T02:46:19.767032988+05:30","level":"INFO","msg":"stream: created new stream","id":"hurilgsn"}
+{"time":"2026-02-27T02:46:19.767169966+05:30","level":"INFO","msg":"handler: started","stream_id":"hurilgsn"}
+{"time":"2026-02-27T02:46:19.767394993+05:30","level":"INFO","msg":"stream: started","id":"hurilgsn"}
+{"time":"2026-02-27T02:46:19.767435753+05:30","level":"INFO","msg":"sender: started","stream_id":"hurilgsn"}
+{"time":"2026-02-27T02:46:19.76744166+05:30","level":"INFO","msg":"writer: started","stream_id":"hurilgsn"}
+{"time":"2026-02-27T02:46:23.017735094+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-27T02:46:23.347374883+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-27T02:46:23.353617541+05:30","level":"INFO","msg":"stream: closing","id":"hurilgsn"}
+{"time":"2026-02-27T02:46:23.353646757+05:30","level":"INFO","msg":"handler: closed","stream_id":"hurilgsn"}
+{"time":"2026-02-27T02:46:23.353714913+05:30","level":"INFO","msg":"sender: closed","stream_id":"hurilgsn"}
+{"time":"2026-02-27T02:46:23.353731057+05:30","level":"INFO","msg":"stream: closed","id":"hurilgsn"}

@@ -1,0 +1,90 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            xymlqwcwbn1ms53e7kl9bj28cabdtoup:
+                args:
+                    - -d
+                    - mnist
+                    - -e
+                    - "5"
+                    - -b
+                    - "128"
+                    - -l
+                    - cross_entropy
+                    - -o
+                    - adam
+                    - -lr
+                    - "0.0002075549867172528"
+                    - -nhl
+                    - "1"
+                    - -sz
+                    - "256"
+                    - -a
+                    - sigmoid
+                    - -w_i
+                    - random
+                    - -wp
+                    - DA_assign_1
+                    - -msp
+                    - model_9mteec8i.txt
+                cpu_count: 14
+                cpu_count_logical: 20
+                disk:
+                    /:
+                        total: "8211386368"
+                        used: "135168"
+                email: cs22b051@smail.iitm.ac.in
+                executable: /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/bin/python
+                host: fedora
+                memory:
+                    total: "16422772736"
+                os: Linux-6.18.12-200.fc43.x86_64-x86_64-with-glibc2.42
+                program: -m src.train
+                python: CPython 3.13.11
+                root: /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main
+                startedAt: "2026-02-26T21:17:12.635913Z"
+                writerId: xymlqwcwbn1ms53e7kl9bj28cabdtoup
+        m: []
+        python_version: 3.13.11
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+                - 16
+            "4": 3.13.11
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+activation:
+    value: sigmoid
+batch:
+    value: 128
+dataset:
+    value: mnist
+epochs:
+    value: 5
+hidden_size:
+    value: 256
+learning_rate:
+    value: 0.0002075549867172528
+loss:
+    value: cross_entropy
+model_save_path:
+    value: model_9mteec8i.txt
+num_layers:
+    value: 1
+optimizer:
+    value: adam
+wandb_project:
+    value: DA_assign_1
+weight_decay:
+    value: null
+weight_init:
+    value: random

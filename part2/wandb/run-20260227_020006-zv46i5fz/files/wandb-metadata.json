@@ -1,0 +1,13 @@
+{
+  "os":  "Linux-6.18.12-200.fc43.x86_64-x86_64-with-glibc2.42",
+  "python":  "CPython 3.13.11",
+  "startedAt":  "2026-02-26T20:30:06.030805Z",
+  "program":  "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/part2/2_2.py",
+  "codePath":  "2_2.py",
+  "codePathLocal":  "2_2.py",
+  "email":  "cs22b051@smail.iitm.ac.in",
+  "root":  "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/part2",
+  "host":  "fedora",
+  "executable":  "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/bin/python",
+  "writerId":  "1nc3petc2coluqzobykhoif5lydx3wil"
+}

@@ -1,0 +1,46 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            adkfyy7hj0t3dfh1qir4pusts0ykg4c6:
+                codePath: 2_2_dup.py
+                codePathLocal: 2_2_dup.py
+                email: cs22b051@smail.iitm.ac.in
+                executable: /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/bin/python
+                host: fedora
+                os: Linux-6.18.12-200.fc43.x86_64-x86_64-with-glibc2.42
+                program: /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/2_2_dup.py
+                python: CPython 3.13.11
+                root: /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main
+                startedAt: "2026-02-26T23:03:49.028858Z"
+                writerId: adkfyy7hj0t3dfh1qir4pusts0ykg4c6
+        m: []
+        python_version: 3.13.11
+        t:
+            "3":
+                - 2
+                - 14
+            "4": 3.13.11
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+activation:
+    value: sigmoid
+batch:
+    value: 128
+dataset:
+    value: mnist
+epochs:
+    value: 20
+hidden_size:
+    value: 32
+learning_rate:
+    value: 0.013208855537253136
+loss:
+    value: mse
+num_layers:
+    value: 1
+optimizer:
+    value: adam
+weight_init:
+    value: xavier

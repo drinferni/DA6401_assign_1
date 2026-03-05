@@ -1,0 +1,14 @@
+<class 'numpy.ndarray'>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/inference.py", line 82, in <module>
+    main()
+    ~~~~^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/inference.py", line 72, in main
+    ann.set_weights(wt)
+    ~~~~~~~~~~~~~~~^^^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/ann/neural_network.py", line 268, in set_weights
+    for i in range(0,(len(weight_dict)/2)):
+                      ~~~^^^^^^^^^^^^^
+TypeError: len() of unsized object

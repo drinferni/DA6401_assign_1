@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/lib/python3.13/site-packages/wandb/sdk/wandb_config.py", line 166, in __getattr__
+    return self.__getitem__(key)
+           ~~~~~~~~~~~~~~~~^^^^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/lib/python3.13/site-packages/wandb/sdk/wandb_config.py", line 131, in __getitem__
+    return self._items[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'weight_decay'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/part2/2_2.py", line 46, in train_logic
+    "-wd", str(c.weight_decay),
+               ^^^^^^^^^^^^^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/lib/python3.13/site-packages/wandb/sdk/wandb_config.py", line 168, in __getattr__
+    raise AttributeError(
+        f"{self.__class__!r} object has no attribute {key!r}"
+    ) from ke
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'weight_decay'

@@ -1,0 +1,20 @@
+2026-02-27 06:20:36,794 INFO    MainThread:105151 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-02-27 06:20:36,794 INFO    MainThread:105151 [wandb_setup.py:_flush():81] Configure stats pid to 105151
+2026-02-27 06:20:36,794 INFO    MainThread:105151 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-02-27 06:20:36,794 INFO    MainThread:105151 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/wandb/run-20260227_062036-fodxtce2/logs/debug.log
+2026-02-27 06:20:36,794 INFO    MainThread:105151 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/wandb/run-20260227_062036-fodxtce2/logs/debug-internal.log
+2026-02-27 06:20:36,795 INFO    MainThread:105151 [wandb_init.py:init():844] calling init triggers
+2026-02-27 06:20:36,795 INFO    MainThread:105151 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'sigmoid', 'batch': 128, 'dataset': 'mnist', 'epochs': 40, 'hidden_size': 64, 'learning_rate': 0.0029241577102132555, 'loss': 'mse', 'num_layers': 1, 'optimizer': 'sgd', 'weight_init': 'random'}
+config: {'dataset': 'mnist', 'epochs': '40', 'batch': '128', 'loss': 'mse', 'optimizer': 'sgd', 'learning_rate': '0.0029241577102132555', 'weight_decay': None, 'num_layers': '1', 'hidden_size': '64', 'activation': 'sigmoid', 'weight_init': 'random', 'wandb_project': 'DA_assign_1', 'model_save_path': 'model_fodxtce2.txt', '_wandb': {}}
+2026-02-27 06:20:36,795 INFO    MainThread:105151 [wandb_init.py:init():892] starting backend
+2026-02-27 06:20:36,795 INFO    MainThread:105151 [wandb_init.py:init():895] sending inform_init request
+2026-02-27 06:20:36,817 INFO    MainThread:105151 [wandb_init.py:init():903] backend started and connected
+2026-02-27 06:20:36,819 INFO    MainThread:105151 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'sigmoid', 'batch': 128, 'dataset': 'mnist', 'epochs': 40, 'hidden_size': 64, 'learning_rate': 0.0029241577102132555, 'loss': 'mse', 'num_layers': 1, 'optimizer': 'sgd', 'weight_init': 'random'}
+2026-02-27 06:20:36,820 INFO    MainThread:105151 [wandb_init.py:init():973] updated telemetry
+2026-02-27 06:20:36,821 INFO    MainThread:105151 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-02-27 06:20:37,901 INFO    MainThread:105151 [wandb_init.py:init():1042] starting run threads in backend
+2026-02-27 06:20:37,977 INFO    MainThread:105151 [wandb_run.py:_console_start():2524] atexit reg
+2026-02-27 06:20:37,977 INFO    MainThread:105151 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-02-27 06:20:37,977 INFO    MainThread:105151 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-02-27 06:20:37,977 INFO    MainThread:105151 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-02-27 06:20:37,980 INFO    MainThread:105151 [wandb_init.py:init():1082] run started, returning control to user process

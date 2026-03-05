@@ -1,0 +1,15 @@
+(785, 16)
+(17, 16)
+(17, 16)
+(17, 10)
+60000
+epochs => 0
+epochs => 1
+epochs => 2
+epochs => 3
+epochs => 4
+
+--- Epoch 5 Evaluation ---
+Train Loss: 10.4278 | Train Acc: 0.1489
+Val Loss:   10.4372 | Val Acc:   0.1471
+Precision:  0.1866 | Recall: 0.1460 | F1: 0.0820

@@ -1,0 +1,12 @@
+{"time":"2026-02-27T03:45:06.694841576+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-27T03:45:07.193018723+05:30","level":"INFO","msg":"stream: created new stream","id":"zeglid11"}
+{"time":"2026-02-27T03:45:07.193138267+05:30","level":"INFO","msg":"handler: started","stream_id":"zeglid11"}
+{"time":"2026-02-27T03:45:07.193309449+05:30","level":"INFO","msg":"stream: started","id":"zeglid11"}
+{"time":"2026-02-27T03:45:07.193330403+05:30","level":"INFO","msg":"sender: started","stream_id":"zeglid11"}
+{"time":"2026-02-27T03:45:07.193328957+05:30","level":"INFO","msg":"writer: started","stream_id":"zeglid11"}
+{"time":"2026-02-27T03:45:09.988266214+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-27T03:45:10.385970659+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-27T03:45:10.391353054+05:30","level":"INFO","msg":"stream: closing","id":"zeglid11"}
+{"time":"2026-02-27T03:45:10.3913891+05:30","level":"INFO","msg":"handler: closed","stream_id":"zeglid11"}
+{"time":"2026-02-27T03:45:10.391468314+05:30","level":"INFO","msg":"sender: closed","stream_id":"zeglid11"}
+{"time":"2026-02-27T03:45:10.391486919+05:30","level":"INFO","msg":"stream: closed","id":"zeglid11"}

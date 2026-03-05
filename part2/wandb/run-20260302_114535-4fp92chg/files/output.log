@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/part2/2_1.py", line 63, in <module>
+    log_data_exploration()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/part2/2_1.py", line 32, in log_data_exploration
+    x_train, y_train_raw = load_data()
+                           ~~~~~~~~~^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/part2/2_1.py", line 10, in load_data
+    x_train = idx2numpy.convert_from_file(os.path.join(path, 'train-images-idx3-ubyte'))
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/venv/lib/python3.13/site-packages/idx2numpy/converters.py", line 56, in convert_from_file
+    with open(file, 'rb') as f:
+         ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './data/mnist/raw/train-images-idx3-ubyte'

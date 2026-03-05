@@ -1,0 +1,14 @@
+2026-02-27 02:06:20,243 INFO    MainThread:7796 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-02-27 02:06:20,243 INFO    MainThread:7796 [wandb_setup.py:_flush():81] Configure stats pid to 7796
+2026-02-27 02:06:20,243 INFO    MainThread:7796 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-02-27 02:06:20,243 INFO    MainThread:7796 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/wandb/run-20260227_020620-ps0g3ha3/logs/debug.log
+2026-02-27 02:06:20,243 INFO    MainThread:7796 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/wandb/run-20260227_020620-ps0g3ha3/logs/debug-internal.log
+2026-02-27 02:06:20,244 INFO    MainThread:7796 [wandb_init.py:init():844] calling init triggers
+2026-02-27 02:06:20,244 INFO    MainThread:7796 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'relu', 'batch': 64, 'dataset': 'mnist', 'epochs': 5, 'hidden_size': 64, 'learning_rate': 0.007974320227525354, 'loss': 'mse', 'num_layers': 1, 'optimizer': 'nag', 'weight_init': 'xavier'}
+config: {'dataset': 'mnist', 'epochs': '5', 'batch': '64', 'loss': 'mse', 'optimizer': 'nag', 'learning_rate': '0.007974320227525354', 'weight_decay': None, 'num_layers': '1', 'hidden_size': '64', 'activation': 'relu', 'weight_init': 'xavier', 'wandb_project': 'DA_assign_1', 'model_save_path': 'model_ps0g3ha3.txt', '_wandb': {}}
+2026-02-27 02:06:20,244 INFO    MainThread:7796 [wandb_init.py:init():892] starting backend
+2026-02-27 02:06:20,245 INFO    MainThread:7796 [wandb_init.py:init():895] sending inform_init request
+2026-02-27 02:06:20,276 INFO    MainThread:7796 [wandb_init.py:init():903] backend started and connected
+2026-02-27 02:06:20,280 INFO    MainThread:7796 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'relu', 'batch': 64, 'dataset': 'mnist', 'epochs': 5, 'hidden_size': 64, 'learning_rate': 0.007974320227525354, 'loss': 'mse', 'num_layers': 1, 'optimizer': 'nag', 'weight_init': 'xavier'}
+2026-02-27 02:06:20,280 INFO    MainThread:7796 [wandb_init.py:init():973] updated telemetry
+2026-02-27 02:06:20,282 INFO    MainThread:7796 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout

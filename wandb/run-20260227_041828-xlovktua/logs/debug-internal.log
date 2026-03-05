@@ -1,0 +1,12 @@
+{"time":"2026-02-27T04:18:28.854201047+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-27T04:18:29.355430963+05:30","level":"INFO","msg":"stream: created new stream","id":"xlovktua"}
+{"time":"2026-02-27T04:18:29.355597864+05:30","level":"INFO","msg":"handler: started","stream_id":"xlovktua"}
+{"time":"2026-02-27T04:18:29.3557312+05:30","level":"INFO","msg":"stream: started","id":"xlovktua"}
+{"time":"2026-02-27T04:18:29.355792621+05:30","level":"INFO","msg":"sender: started","stream_id":"xlovktua"}
+{"time":"2026-02-27T04:18:29.355798271+05:30","level":"INFO","msg":"writer: started","stream_id":"xlovktua"}
+{"time":"2026-02-27T04:18:32.105188829+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-27T04:18:32.433220454+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-27T04:18:32.439473641+05:30","level":"INFO","msg":"stream: closing","id":"xlovktua"}
+{"time":"2026-02-27T04:18:32.439536463+05:30","level":"INFO","msg":"handler: closed","stream_id":"xlovktua"}
+{"time":"2026-02-27T04:18:32.439607507+05:30","level":"INFO","msg":"sender: closed","stream_id":"xlovktua"}
+{"time":"2026-02-27T04:18:32.439624295+05:30","level":"INFO","msg":"stream: closed","id":"xlovktua"}

@@ -1,0 +1,19 @@
+(785, 32)
+(33, 32)
+(33, 10)
+60000
+epochs => 0
+epochs => 1
+epochs => 2
+epochs => 3
+epochs => 4
+epochs => 5
+epochs => 6
+epochs => 7
+epochs => 8
+epochs => 9
+
+--- Epoch 10 Evaluation ---
+Train Loss: 0.0453 | Train Acc: 0.6926
+Val Loss:   0.0450 | Val Acc:   0.6932
+Precision:  0.7018 | Recall: 0.6852 | F1: 0.6440

@@ -1,0 +1,19 @@
+(785, 16)
+(17, 16)
+(17, 16)
+(17, 10)
+60000
+epochs => 0
+/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/ann/objective_functions.py:12: RuntimeWarning: invalid value encountered in divide
+  return np.where(y_pred > 0, -y_true / y_pred, 0)
+/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/ann/objective_functions.py:12: RuntimeWarning: divide by zero encountered in divide
+  return np.where(y_pred > 0, -y_true / y_pred, 0)
+epochs => 1
+epochs => 2
+epochs => 3
+epochs => 4
+
+--- Epoch 5 Evaluation ---
+Train Loss: 28.3176 | Train Acc: 0.0974
+Val Loss:   28.3445 | Val Acc:   0.0982
+Precision:  0.0098 | Recall: 0.1000 | F1: 0.0179

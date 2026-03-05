@@ -1,0 +1,30 @@
+<class 'numpy.ndarray'>
+{'W0': array([[-1.3018094 , -0.31593039,  1.68087787, -0.01369128],
+       [ 0.8317333 ,  1.03864749,  0.53950174,  1.90157652],
+       [-1.80184298,  0.53709454,  0.48871847,  1.6223735 ],
+       ...,
+       [ 1.17067363,  1.73580812,  0.44740357,  0.73297349],
+       [-0.45948857, -0.41608128,  0.01831353,  0.56313206],
+       [-1.06857987,  0.13732729,  0.45376493,  0.64984291]],
+      shape=(784, 4)), 'b0': array([[-1.05195721,  0.88861036, -0.33818541,  1.71316571]]), 'W1': array([[4.30890625, 4.35040111, 3.29873677, 4.00457051, 4.77132867,
+        5.412267  , 4.88891175, 3.83766909, 3.03945532, 7.12165832],
+       [5.43124442, 4.6122033 , 3.81910131, 2.0386646 , 3.12325411,
+        3.53959282, 4.68542499, 2.83810243, 4.6787496 , 3.97966038],
+       [4.37507447, 4.84736286, 3.63953254, 5.42300972, 3.17916336,
+        7.61892369, 4.74243003, 4.4710612 , 4.23316907, 3.35870731],
+       [5.16569942, 6.83452209, 8.18197494, 6.2071088 , 8.52997782,
+        2.2453434 , 4.73759685, 8.80118372, 7.6174991 , 5.11613302]]), 'b1': array([[3.52305661, 2.17362149, 3.74277027, 5.17940572, 3.09382244,
+        3.96471384, 3.70821759, 2.8342095 , 3.18865059, 3.2116237 ]])}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/inference.py", line 82, in <module>
+    main()
+    ~~~~^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/inference.py", line 72, in main
+    ann.set_weights(wt)
+    ~~~~~~~~~~~~~~~^^^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/da6401_assignment_1-main/src/ann/neural_network.py", line 269, in set_weights
+    for i in range(0,(len(weight_dict)/2)):
+                      ~~~^^^^^^^^^^^^^
+TypeError: len() of unsized object
