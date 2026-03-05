@@ -161,6 +161,9 @@ class NeuralNetwork:
             self.grad_W.append(self.gradient_mat[x][1:])
             self.grad_b.append(self.gradient_mat[x][:1])
 
+        for x in range(0,l,1):
+            self.grad_W[x] += self.weight_decay * self.weight_mat[x][1:]
+
         return self.grad_W,self.grad_b
 
     
