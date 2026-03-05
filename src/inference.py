@@ -1,6 +1,6 @@
 from .utils.data_loader import *
-from .ann.neural_network import *
-from .ann.optimizers import *
+from src.ann.neural_network import *
+from src.ann.optimizers import *
 import wandb
 
 """
@@ -26,7 +26,7 @@ def parse_arguments():
 
     parser.add_argument("-d","--dataset",choices=["mnist","fashion_mnist"])
     parser.add_argument("-e","--epochs")
-    parser.add_argument("-b","--batch")
+    parser.add_argument("-b","--batch_size")
     parser.add_argument("-l","--loss",choices=["cross_entropy","mse"])
     parser.add_argument("-o","--optimizer",choices=["sgd","momentum","nag","RMSprop"])
     parser.add_argument("-lr","--learning_rate")
@@ -65,7 +65,9 @@ def main():
 
     X_train,Y_train,x_test,y_test = load_data(args.dataset)
     # print(Y_train)
-    ann = NeuralNetwork(args,len(X_train[0]),10)
+    args.n = len(X_train[0])
+    args.m = 10
+    ann = NeuralNetwork(args)
 
     wt = load_model(args.model_path)
 

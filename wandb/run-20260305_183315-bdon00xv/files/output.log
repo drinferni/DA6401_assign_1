@@ -1,0 +1,19 @@
+(785, 32)
+(33, 32)
+(33, 10)
+60000
+epochs => 0
+/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/ann/objective_functions.py:11: RuntimeWarning: overflow encountered in exp
+  e_x = np.exp(x)
+/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/ann/objective_functions.py:12: RuntimeWarning: invalid value encountered in divide
+  return e_x / np.sum(e_x, axis=-1, keepdims=True)
+/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/ann/objective_functions.py:21: RuntimeWarning: invalid value encountered in divide
+  return np.where(y_pred > 0, -y_true / y_pred, 0)
+/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/ann/objective_functions.py:21: RuntimeWarning: divide by zero encountered in divide
+  return np.where(y_pred > 0, -y_true / y_pred, 0)
+epochs => 1
+epochs => 2
+/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/ann/objective_functions.py:11: RuntimeWarning: overflow encountered in exp
+  e_x = np.exp(x)
+/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/ann/objective_functions.py:12: RuntimeWarning: invalid value encountered in divide
+  return e_x / np.sum(e_x, axis=-1, keepdims=True)

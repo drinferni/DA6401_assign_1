@@ -1,0 +1,1 @@
+{"train/recall":0.1,"test/recall":0.1,"test/acc":0.098,"train/acc":0.09871666666666666,"_timestamp":1.772716067081838e+09,"test/precision":0.0098,"_runtime":66,"train/f1":0.017969449205891722,"_wandb":{"runtime":66},"train/precision":0.009871666666666666,"test/f1":0.01785063752276867,"test/loss":NaN,"train/loss":NaN,"_step":0}

@@ -1,5 +1,5 @@
 import numpy as np
-from .activations import *
+from ann.activations import *
 """
 Neural Layer Implementation
 Handles weight initialization, forward pass, and gradient computation

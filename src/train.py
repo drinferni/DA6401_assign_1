@@ -1,6 +1,6 @@
-from .utils.data_loader import *
-from .ann.neural_network import *
-from .ann.optimizers import *
+from utils.data_loader import *
+from ann.neural_network import *
+from ann.optimizers import *
 import wandb
 
 """
@@ -44,7 +44,7 @@ def parse_arguments():
 
     parser.add_argument("-d","--dataset",choices=["mnist","fashion_mnist"])
     parser.add_argument("-e","--epochs")
-    parser.add_argument("-b","--batch")
+    parser.add_argument("-b","--batch_size")
     parser.add_argument("-l","--loss",choices=["cross_entropy","mse"])
     parser.add_argument("-o","--optimizer",choices=["sgd","momentum","nag","adam","nadam","RMSprop"])
     parser.add_argument("-lr","--learning_rate")
@@ -68,13 +68,15 @@ def main():
     print(vars(args))
 
 
-    X_train,Y_train,x_test,y_test = load_data("mnist")
-    ann = NeuralNetwork(args,len(X_train[0]),10)
+    X_train,Y_train,x_test,y_test = load_data(args.dataset)
+    args.n = len(X_train[0])
+    args.m = 10
+    ann = NeuralNetwork(args)
     for x in ann.weight_mat:
         print(x.shape)
 
     print(len(X_train))
-    ann.train(X_train,Y_train, int(args.epochs), int(args.batch))
+    ann.train(X_train,Y_train, int(args.epochs), int(args.batch_size))
 
     training = ann.evaluate(X_train,Y_train)
     test = ann.evaluate(x_test,y_test)

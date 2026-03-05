@@ -8,7 +8,8 @@ Implements: Cross-Entropy, Mean Squared Error (MSE)
 import numpy as np
 
 def softmax(x):
-    e_x = np.exp(x)
+    shift_x = x - np.max(x, axis=-1, keepdims=True)
+    e_x = np.exp(shift_x)
     return e_x / np.sum(e_x, axis=-1, keepdims=True)
 
 
@@ -18,6 +19,8 @@ def get_derivation_loss(y_true, y_pred, loss):
 
     else:
         y_pred = softmax(y_pred)
+        epsilon = 1e-15
+        y_pred = np.clip(y_pred, epsilon, 1.0)
         return np.where(y_pred > 0, -y_true / y_pred, 0)
     
 def get_loss(y_true, y_pred, loss):

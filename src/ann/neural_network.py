@@ -1,7 +1,7 @@
 import numpy as np
-from .neural_layer import *
-from .objective_functions import *
-from .optimizers import *
+from ann.neural_layer import *
+from ann.objective_functions import *
+from ann.optimizers import *
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import wandb
 """
@@ -36,7 +36,7 @@ class NeuralNetwork:
     run:any
 
     
-    def __init__(self, cli_args,n,m):
+    def __init__(self, cli_args):
         """
         Initialize the neural network.
 
@@ -54,8 +54,8 @@ class NeuralNetwork:
         self.loss = cli_args.loss
         self.epoch = cli_args.epochs
 
-        self.input_size = n
-        self.output_size = m
+        self.input_size = cli_args.n
+        self.output_size = cli_args.m
 
         self.weight_mat = weight_initialsize(self.num_layer, self.hidden_size, self.weight_init,self.input_size,self.output_size)
         self.gradient_mat = []
