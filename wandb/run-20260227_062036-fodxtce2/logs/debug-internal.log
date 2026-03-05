@@ -1,9 +1,0 @@
-{"time":"2026-02-27T06:20:36.817305087+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
-{"time":"2026-02-27T06:20:37.285698368+05:30","level":"INFO","msg":"stream: created new stream","id":"fodxtce2"}
-{"time":"2026-02-27T06:20:37.285775207+05:30","level":"INFO","msg":"handler: started","stream_id":"fodxtce2"}
-{"time":"2026-02-27T06:20:37.285850118+05:30","level":"INFO","msg":"stream: started","id":"fodxtce2"}
-{"time":"2026-02-27T06:20:37.285898472+05:30","level":"INFO","msg":"writer: started","stream_id":"fodxtce2"}
-{"time":"2026-02-27T06:20:37.285926964+05:30","level":"INFO","msg":"sender: started","stream_id":"fodxtce2"}
-{"time":"2026-02-27T08:32:50.811567111+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/cs22b051-indian-institute-of-technology-madras/DA_assign_1/fodxtce2/file_stream\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
-{"time":"2026-02-27T08:35:53.134988493+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/cs22b051-indian-institute-of-technology-madras/DA_assign_1/fodxtce2/file_stream\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
-{"time":"2026-02-27T08:38:24.55212499+05:30","level":"INFO","msg":"stream: closing","id":"fodxtce2"}

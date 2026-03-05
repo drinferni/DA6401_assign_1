@@ -1,1 +1,0 @@
-{"val_precision":0.4890483270176835,"val_f1":0.328371792402284,"epoch":"5","val_recall":0.34387918340083473,"_wandb":{"runtime":174},"_timestamp":1.7721406341717708e+09,"val_acc":0.3394,"val_loss":0.7050758659946819,"_runtime":174,"_step":0,"train_acc":0.33325,"train_loss":0.7060227264814393}
