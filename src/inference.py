@@ -1,6 +1,6 @@
-from .utils.data_loader import *
-from src.ann.neural_network import *
-from src.ann.optimizers import *
+from utils.data_loader import *
+from ann.neural_network import *
+from ann.optimizers import *
 import wandb
 
 """
@@ -28,7 +28,7 @@ def parse_arguments():
     parser.add_argument("-e","--epochs")
     parser.add_argument("-b","--batch_size")
     parser.add_argument("-l","--loss",choices=["cross_entropy","mse"])
-    parser.add_argument("-o","--optimizer",choices=["sgd","momentum","nag","RMSprop"])
+    parser.add_argument("-o","--optimizer",choices=["sgd","momentum","nag","adam","nadam","RMSprop"])
     parser.add_argument("-lr","--learning_rate")
     parser.add_argument("-wd","--weight_decay")
     parser.add_argument("-nhl","--num_layers",dest="num_hidden_layers")
@@ -69,6 +69,10 @@ def main():
     args.m = 10
     ann = NeuralNetwork(args)
 
+    run = None
+    if args.wandb_project :
+        run = wandb.init(project=args.wandb_project, config=vars(args))
+
     wt = load_model(args.model_path)
 
     ann.set_weights(wt)
@@ -79,7 +83,12 @@ def main():
     metrics = {f"train/{k}": v for k, v in training.items() if k != "logits"}
     metrics.update({f"test/{k}": v for k, v in test.items() if k != "logits"})
 
-    wandb.log(metrics)
+    if run != None:
+        wandb.log(metrics)
+
+
+    if run != None:
+        run.finish()
     
     print(metrics)
     
