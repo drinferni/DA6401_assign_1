@@ -34,6 +34,8 @@ class NeuralNetwork:
 
     optimizer:any
 
+    weight_decay:any
+
     
     def __init__(self, cli_args):
         """
@@ -62,6 +64,11 @@ class NeuralNetwork:
         self.z_val_mat = []
         self.loss_mat = []
         self.optimizer = None
+
+        if cli_args.weight_decay:
+            self.weight_decay = cli_args.weight_decay
+        else:
+            self.weight_decay = 1
 
         self.grad_W = []
         self.grad_b = []
@@ -125,7 +132,7 @@ class NeuralNetwork:
         l = len(self.weight_mat)
         # print(l,len(self.z_val_mat))
         l_mat = []
-        loss_out = get_derivation_loss(y_true,y_pred,self.loss) * get_derivative_activation(self.activation,self.z_val_mat[l])
+        loss_out = get_derivation_loss(y_true,y_pred,self.loss, self.activation,self.z_val_mat[l])
         l_mat.append(loss_out)
         for x in range(l-1,0,-1):
             # print(x)
@@ -169,13 +176,13 @@ class NeuralNetwork:
         """
 
         if self.optimization.upper() == "SGD":
-            self.optimizer = SGD(lr=self.lr)
+            self.optimizer = SGD(self.weight_decay, lr=self.lr)
         elif self.optimization.upper() == "MOMENTUM":
-            self.optimizer = Momentum(lr=self.lr, beta=getattr(self, 'beta', 0.9))
+            self.optimizer = Momentum(self.weight_decay, lr=self.lr, beta=getattr(self, 'beta', 0.9))
         elif self.optimization.upper() == "NAG":
-            self.optimizer = NAG(lr=self.lr, beta=getattr(self, 'beta', 0.9))
+            self.optimizer = NAG(self.weight_decay, lr=self.lr, beta=getattr(self, 'beta', 0.9))
         elif self.optimization.upper() == "RMSPROP":
-            self.optimizer = RMSprop(lr=self.lr, beta=getattr(self, 'beta', 0.99))
+            self.optimizer = RMSprop(self.weight_decay, lr=self.lr, beta=getattr(self, 'beta', 0.99))
 
 
         for x in range (0,epochs):
@@ -186,6 +193,7 @@ class NeuralNetwork:
             for y in range (0,cycle):
                 new_X = X_train[count:count+batch_size]
                 new_Y = y_train[count:count+batch_size]
+                prev_weight_mat = self.weight_mat.copy()
                 self.weight_mat = self.optimizer.preprocess(self.weight_mat)
                 gradient_collector = None
                 for dp in range(0,len(new_X)):
@@ -208,9 +216,13 @@ class NeuralNetwork:
                 # for x in gradient_collector:
                 #     print("gradient",x.shape)
                 #     print(x)
-                gradient_collector = [g / len(new_X) for g in gradient_collector]
 
-                self.weight_mat = self.optimizer.update(self.weight_mat,gradient_collector)
+
+                #averageing the gradient
+                gradient_collector = [g / len(new_X) for g in gradient_collector]
+                
+
+                self.weight_mat = self.optimizer.update(prev_weight_mat,gradient_collector,self.weight_decay)
 
     def test(self,X):
         y_pred = []

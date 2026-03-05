@@ -98,6 +98,8 @@ def main():
 
     best_weights = ann.get_weights()
     np.save("best_model.npy", best_weights)
+
+    # ann.print_mat(ann.gradient_mat)
     
     print("Training complete!")
 
