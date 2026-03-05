@@ -44,8 +44,8 @@ class NeuralNetwork:
             cli_args: Command-line arguments for configuring the network
         """
         print(cli_args)
-        self.num_layer = int(cli_args.num_layers)
-        self.hidden_size = int(cli_args.hidden_size)
+        self.num_layer = int(cli_args.num_hidden_layers)
+        self.hidden_size = cli_args.hidden_layer_sizes
         self.activation = cli_args.activation
         self.optimization = cli_args.optimizer
         self.weight_init = cli_args.weight_init

@@ -9,25 +9,25 @@ def weight_initialsize(nm,hs,method,n,m):
     wm = []
     inp = n
     for x in range (0,nm):
-        wght_mat = np.array((inp+1,hs))
+        wght_mat = np.array((inp+1,hs[x]))
         if method == "random":
-            wght_mat = np.random.randn(inp+1,hs)
+            wght_mat = np.random.randn(inp+1,hs[x])
         elif method == "one":
-            wght_mat = np.ones((inp+1,hs))
+            wght_mat = np.ones((inp+1,hs[x]))
         else :
-            limit = np.sqrt(6 / (inp+hs))
-            wght_mat = np.random.uniform(-limit, limit, size=(inp+1,hs))
-        inp = hs
+            limit = np.sqrt(6 / (inp+hs[x]))
+            wght_mat = np.random.uniform(-limit, limit, size=(inp+1,hs[x]))
+        inp = hs[x]
         wm.append(wght_mat)
     
-    final_mat = np.array((hs+1,m))
+    final_mat = np.array((hs[-1]+1,m))
     if method == "random":
-        final_mat = np.random.randn(hs+1,m)
+        final_mat = np.random.randn(hs[-1]+1,m)
     elif method == "one":
-        final_mat = np.ones((hs+1,m))
+        final_mat = np.ones((hs[-1]+1,m))
     else :
-        limit = np.sqrt(6 / (hs+m))
-        final_mat = np.random.uniform(-limit, limit, size=(hs+1,m))
+        limit = np.sqrt(6 / (hs[-1]+m))
+        final_mat = np.random.uniform(-limit, limit, size=(hs[-1]+1,m))
     
     wm.append(final_mat)
 
