@@ -1,0 +1,1 @@
+{"_timestamp":1.7727181807039018e+09,"test/acc":0.098,"train/recall":0.1,"train/f1":0.017969449205891722,"test/loss":NaN,"_step":0,"test/f1":0.01785063752276867,"train/acc":0.09871666666666666,"_wandb":{"runtime":50},"test/recall":0.1,"_runtime":50,"test/precision":0.0098,"train/loss":NaN,"train/precision":0.009871666666666666}

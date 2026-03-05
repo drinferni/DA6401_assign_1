@@ -54,8 +54,8 @@ class NeuralNetwork:
         self.loss = cli_args.loss
         self.epoch = cli_args.epochs
 
-        self.input_size = cli_args.n
-        self.output_size = cli_args.m
+        self.input_size = 28*28 
+        self.output_size = 10
 
         self.weight_mat = weight_initialsize(self.num_layer, self.hidden_size, self.weight_init,self.input_size,self.output_size)
         self.gradient_mat = []

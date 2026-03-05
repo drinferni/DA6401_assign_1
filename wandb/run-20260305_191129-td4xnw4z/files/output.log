@@ -1,0 +1,21 @@
+(785, 3)
+(4, 2)
+(3, 1)
+60000
+epochs => 0
+Traceback (most recent call last):
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/train.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/train.py", line 79, in main
+    ann.train(X_train,Y_train, int(args.epochs), int(args.batch_size))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/ann/neural_network.py", line 199, in train
+    self.backward(new_Y[dp],pred_Y)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/ann/neural_network.py", line 134, in backward
+    loss_vec = backward_layer(self.weight_mat[x],l_mat[(l-1)-x],self.z_val_mat[x],self.activation,x)
+  File "/home/anshmeshram/Desktop/main folder IIT MADRAS/semester 8 year 4/DL/Assignment_1/DA6401_assign_1/src/ann/neural_layer.py", line 47, in backward_layer
+    return (pre_wgt @ pre_loss) * np.insert(get_derivative_activation(activation,z_mat),0,1)
+            ~~~~~~~~^~~~~~~~~~
+ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 9 is different from 1)
