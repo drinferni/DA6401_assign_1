@@ -33,7 +33,6 @@ class NeuralNetwork:
     output_size:any
 
     optimizer:any
-    run:any
 
     
     def __init__(self, cli_args):
@@ -67,7 +66,6 @@ class NeuralNetwork:
         self.grad_W = []
         self.grad_b = []
 
-        self.run = wandb.init(project=cli_args.wandb_project, config=vars(cli_args))
 
 
         pass

@@ -78,16 +78,23 @@ def main():
     print(len(X_train))
     ann.train(X_train,Y_train, int(args.epochs), int(args.batch_size))
 
+    run = None
+
+    if args.wandb_project :
+        run = wandb.init(project=args.wandb_project, config=vars(args))
+    
     training = ann.evaluate(X_train,Y_train)
     test = ann.evaluate(x_test,y_test)
 
     metrics = {f"train/{k}": v for k, v in training.items() if k != "logits"}
     metrics.update({f"test/{k}": v for k, v in test.items() if k != "logits"})
 
-    wandb.log(metrics)
+    if run != None:
+        wandb.log(metrics)
 
 
-    ann.run.finish()
+    if run != None:
+        run.finish()
 
     best_weights = ann.get_weights()
     np.save("best_model.npy", best_weights)
