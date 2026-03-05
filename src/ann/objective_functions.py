@@ -48,20 +48,20 @@ def get_derivation_loss(y_true, y_pred, loss, activation, z_mat):
         da = (y_pred - y_true)
         
         # Multiply by dA/dZ (derivative of the activation function)
-        if activation == "relu":
-            return da * (z_mat > 0).astype(float)
-        elif activation == "tanh":
-            return da * (1 - np.tanh(z_mat)**2)
-        elif activation == "sigmoid":
-            sig = 1 / (1 + np.exp(-z_mat))
-            return da * (sig * (1 - sig))
-        else:
-            return da # For linear/identity
+        # if activation == "relu":
+        #     return da * (z_mat > 0).astype(float)
+        # elif activation == "tanh":
+        #     return da * (1 - np.tanh(z_mat)**2)
+        # elif activation == "sigmoid":
+        sig = 1 / (1 + np.exp(-z_mat))
+        return da * (sig * (1 - sig))
+        # else:
+        #     return da # For linear/identity
 
     else: # Cross Entropy
         # For Cross-Entropy + Softmax, dL/dZ is simply (y_pred - y_true)
         # We assume y_pred is already the output of the softmax
-        # if activation == "softmax":
+        #if activation == "softmax":
         return (y_pred - y_true)
         
         # # If CE is used with Sigmoid (binary-like classification)
@@ -73,14 +73,14 @@ def get_derivation_loss(y_true, y_pred, loss, activation, z_mat):
         #     # This is numerically unstable, but provided for completeness
         #     epsilon = 1e-15
         #     y_pred = np.clip(y_pred, epsilon, 1.0)
-        #     da = - (y_true / y_pred) + (1 - y_true) / (1 - y_pred)
-            
-        #     if activation == "relu":
-        #         return da * (z_mat > 0).astype(float)
-        #     return da
+        #     # For Categorical Cross-Entropy
+        #     da = - (y_true / (y_pred + epsilon))
+        #     return da * (z_mat > 0)
+        
     
 def get_loss(y_true, y_pred, loss):
     if loss == "mse":
+        y_pred = softmax(y_pred)
         return np.mean(np.square(y_true - y_pred))
     
     else: # cross-entropy=

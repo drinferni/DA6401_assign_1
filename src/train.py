@@ -88,7 +88,7 @@ def main():
 
     metrics = {f"train/{k}": v for k, v in training.items() if k != "logits"}
     metrics.update({f"test/{k}": v for k, v in test.items() if k != "logits"})
-
+    print(metrics)
     if run != None:
         wandb.log(metrics)
 
@@ -99,7 +99,7 @@ def main():
     best_weights = ann.get_weights()
     np.save("best_model.npy", best_weights)
 
-    # ann.print_mat(ann.gradient_mat)
+    ann.print_mat(ann.gradient_mat)
     
     print("Training complete!")
 
